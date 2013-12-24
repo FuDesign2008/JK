@@ -1,4 +1,4 @@
 JK
 ==
 
-Javascript toolKit
+JavaScript Kit
