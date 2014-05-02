@@ -1,0 +1,5 @@
+dotjs
+1. js 模块管理 -> seajs （RequireJS AMD）
+2. jsLint
+2. css 模块管理 -> less 
+3. QUnit 测试

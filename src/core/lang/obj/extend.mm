@@ -1,0 +1,155 @@
+<map version="0.9.0">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node CREATED="1324955835771" ID="ID_1508401055" MODIFIED="1324956661288" TEXT="extend">
+<node CREATED="1324956607370" ID="ID_1605820008" MODIFIED="1324962136698" POSITION="left" TEXT="extend(&#x53ea;&#x6269;&#x5c55;&#xff0c;&#x4e0d;&#x8986;&#x76d6;&#x539f;&#x6709;)">
+<node CREATED="1324955854838" ID="ID_816416636" MODIFIED="1324956616115" TEXT="{Object}">
+<node CREATED="1324956038307" ID="ID_1105849550" MODIFIED="1324956502576" TEXT="{Object}">
+<node CREATED="1324957555101" ID="ID_837318666" MODIFIED="1324957991041" TEXT=" &#x9010;&#x6b65;&#x6df1;&#x5165;(call fnSelf) ">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-1"/>
+</node>
+</node>
+<node CREATED="1324956045076" ID="ID_197418321" MODIFIED="1324956504561" TEXT="[Array]">
+<node CREATED="1324957571983" ID="ID_935692347" MODIFIED="1324957997305" TEXT="">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+<node CREATED="1324956079832" ID="ID_144097423" MODIFIED="1324956506560" TEXT="fn, bool...">
+<node CREATED="1324957580112" ID="ID_1282640673" MODIFIED="1324958003656" TEXT="">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+</node>
+<node CREATED="1324955863975" ID="ID_554376546" MODIFIED="1324955869519" TEXT="[Array]">
+<node CREATED="1324956086616" ID="ID_233509997" MODIFIED="1324956496073" TEXT="{Object}">
+<node CREATED="1324957585864" ID="ID_757051706" MODIFIED="1324958005512" TEXT="">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+<node CREATED="1324956097794" ID="ID_129326122" MODIFIED="1324956500072" TEXT="[Array]">
+<node CREATED="1324957589690" ID="ID_280649984" MODIFIED="1324958007367" TEXT="">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+<node CREATED="1324956149090" ID="ID_1367217569" MODIFIED="1324956488092" TEXT="fn, bool....">
+<node CREATED="1324957599095" ID="ID_491029425" MODIFIED="1324958009185" TEXT="">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+</node>
+<node CREATED="1324955870537" ID="ID_763002886" MODIFIED="1324955893261" TEXT="fn, bool,...">
+<node CREATED="1324956212049" ID="ID_1672955048" MODIFIED="1324957734656" TEXT="{Object}">
+<node CREATED="1324957736136" ID="ID_1773665228" MODIFIED="1324958010896" TEXT="">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+<node CREATED="1324956218098" ID="ID_1410371310" MODIFIED="1324956222195" TEXT="[Array]">
+<node CREATED="1324957739302" ID="ID_1223561944" MODIFIED="1324958012744" TEXT="">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+<node CREATED="1324956222755" ID="ID_1222513772" MODIFIED="1324956232448" TEXT="fn, bool...">
+<node CREATED="1324957742097" ID="ID_823653878" MODIFIED="1324958014664" TEXT="">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+</node>
+<node CREATED="1324957685223" ID="ID_846198825" MODIFIED="1324957690907" TEXT="undefined">
+<node CREATED="1324957697033" ID="ID_607643699" MODIFIED="1324957722434" TEXT="{Object}">
+<node CREATED="1324957753127" ID="ID_204259007" MODIFIED="1324958051744" TEXT="&#x521d;&#x59cb;&#x5316;{}&#xff0c;&#x9010;&#x6b65;&#x6df1;&#x5165;&#xff08;call fnSelf&#xff09;">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-1"/>
+</node>
+</node>
+<node CREATED="1324957704770" ID="ID_554426769" MODIFIED="1324957709341" TEXT="[Array]">
+<node CREATED="1324957785318" ID="ID_901903005" MODIFIED="1324958057392" TEXT="&#x521d;&#x59cb;&#x5316;[ ], &#x5982;&#x679c;deep, &#x9010;&#x6b65;&#x6df1;&#x5165;&#x62f7;&#x8d1d;(call fnself)&#xff0c;&#x5426;&#x5219;&#x7b80;&#x5355;&#x514b;&#x9686;">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-2"/>
+</node>
+</node>
+<node CREATED="1324957710111" ID="ID_1227901466" MODIFIED="1324957716403" TEXT="fn,bool...">
+<node CREATED="1324957805338" ID="ID_1997807204" MODIFIED="1324958065496" TEXT="&#x76f4;&#x63a5;&#x8986;&#x76d6;&#x539f;&#x6709;&#x503c;">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-3"/>
+</node>
+</node>
+</node>
+</node>
+<node CREATED="1324956607370" ID="ID_1212537888" MODIFIED="1324961979632" POSITION="right" TEXT="over&#xff08;&#x53ea;&#x8986;&#x76d6;&#x539f;&#x6709;&#xff0c;&#x4e0d;&#x6269;&#x5c55;&#xff09;">
+<node CREATED="1324955854838" ID="ID_704346295" MODIFIED="1324956616115" TEXT="{Object}">
+<node CREATED="1324956038307" ID="ID_419460144" MODIFIED="1324956502576" TEXT="{Object}">
+<node CREATED="1324956765407" ID="ID_3085395" MODIFIED="1324957894712" TEXT=" &#x9010;&#x6b65;&#x6df1;&#x5165;(call fnSelf) ">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-1"/>
+</node>
+</node>
+<node CREATED="1324956045076" ID="ID_1287404030" MODIFIED="1324960779181" TEXT="[Array]">
+<node CREATED="1324957027790" ID="ID_912137777" MODIFIED="1324960663170" TEXT="&#x8fd4;&#x56de;base">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+<node CREATED="1324956079832" ID="ID_1852507534" MODIFIED="1324962437019" TEXT="fn, bool...">
+<node CREATED="1324957027790" ID="ID_335242036" MODIFIED="1324960663170" TEXT="&#x8fd4;&#x56de;base">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+<node CREATED="1324962441052" ID="ID_618838242" MODIFIED="1324962564417" TEXT="null, undefined">
+<node CREATED="1324957027790" ID="ID_1565864629" MODIFIED="1324960663170" TEXT="&#x8fd4;&#x56de;base">
+<icon BUILTIN="closed"/>
+<icon BUILTIN="full-4"/>
+</node>
+</node>
+</node>
+<node CREATED="1324955863975" ID="ID_1519291476" MODIFIED="1324955869519" TEXT="[Array]">
+<node CREATED="1324956086616" ID="ID_1358397812" MODIFIED="1324956496073" TEXT="{Object}">
+<node CREATED="1324957753127" ID="ID_242188735" MODIFIED="1324958051744" TEXT="&#x521d;&#x59cb;&#x5316;{}&#xff0c;&#x9010;&#x6b65;&#x6df1;&#x5165;&#xff08;call fnSelf&#xff09;">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-1"/>
+</node>
+</node>
+<node CREATED="1324956097794" ID="ID_1216833787" MODIFIED="1324956500072" TEXT="[Array]">
+<node CREATED="1324957785318" ID="ID_824426784" MODIFIED="1324958057392" TEXT="&#x521d;&#x59cb;&#x5316;[ ], &#x5982;&#x679c;deep, &#x9010;&#x6b65;&#x6df1;&#x5165;&#x62f7;&#x8d1d;(call fnself)&#xff0c;&#x5426;&#x5219;&#x7b80;&#x5355;&#x514b;&#x9686;">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-2"/>
+</node>
+</node>
+<node CREATED="1324956149090" ID="ID_1858800367" MODIFIED="1324961181249" TEXT="fn, bool....">
+<node CREATED="1324957805338" ID="ID_226291885" MODIFIED="1324958065496" TEXT="&#x76f4;&#x63a5;&#x8986;&#x76d6;&#x539f;&#x6709;&#x503c;">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-3"/>
+</node>
+</node>
+</node>
+<node CREATED="1324955870537" ID="ID_120342445" MODIFIED="1324955893261" TEXT="fn, bool,...">
+<node CREATED="1324956212049" ID="ID_1200641959" MODIFIED="1324961299770" TEXT="{Object}">
+<node CREATED="1324957753127" ID="ID_1866647661" MODIFIED="1324958051744" TEXT="&#x521d;&#x59cb;&#x5316;{}&#xff0c;&#x9010;&#x6b65;&#x6df1;&#x5165;&#xff08;call fnSelf&#xff09;">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-1"/>
+</node>
+</node>
+<node CREATED="1324956218098" ID="ID_668144949" MODIFIED="1324956222195" TEXT="[Array]">
+<node CREATED="1324957785318" ID="ID_442581053" MODIFIED="1324958057392" TEXT="&#x521d;&#x59cb;&#x5316;[ ], &#x5982;&#x679c;deep, &#x9010;&#x6b65;&#x6df1;&#x5165;&#x62f7;&#x8d1d;(call fnself)&#xff0c;&#x5426;&#x5219;&#x7b80;&#x5355;&#x514b;&#x9686;">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-2"/>
+</node>
+</node>
+<node CREATED="1324956222755" ID="ID_1188364793" MODIFIED="1324956232448" TEXT="fn, bool...">
+<node CREATED="1324957805338" ID="ID_1261348632" MODIFIED="1324958065496" TEXT="&#x76f4;&#x63a5;&#x8986;&#x76d6;&#x539f;&#x6709;&#x503c;">
+<icon BUILTIN="button_ok"/>
+<icon BUILTIN="full-3"/>
+</node>
+</node>
+</node>
+</node>
+</node>
+</map>
