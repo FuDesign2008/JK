@@ -8,7 +8,7 @@
  *  obj.error(object);
  *  obj.printLog();
  *
- * @author fuyg@rd.netease.com
+ * @author FuDesign2008@163.com
  * @date   2012-07-19
  * @time   15:21:23
  */
