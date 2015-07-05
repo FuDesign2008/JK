@@ -34,6 +34,7 @@ define(function (require) {
             return window.event;
         }
 
+        /*jshint noarg: false*/
         caller = arguments.callee.caller;
         while (caller != null && counter < STEPS) {
             event = caller['arguments'][0];
