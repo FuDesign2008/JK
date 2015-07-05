@@ -28,10 +28,9 @@ define(function (require) {
         if (node.contains && (!UA.WEBKIT || UA.WEBKIT >= 522)) {
             return node.contains(otherNode);
         }
-        /*jslint maxlen: 200*/
-        //@see https://developer.mozilla.org/en-US/docs/DOM/Node.compareDocumentPosition
+        //@see
+        //https://developer.mozilla.org/en-US/docs/DOM/Node.compareDocumentPosition
         if (node.compareDocumentPosition) {//FF
-            /*jslint bitwise: true*/
             return !!(node.compareDocumentPosition(otherNode) & 16);
         }
         //others

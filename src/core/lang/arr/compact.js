@@ -15,7 +15,6 @@ define(function (require) {
     return function (a) {
         var i, l = a.length, ret = [];
         for (i = 0; i < l; i++) {
-            /*jslint eqeq: true*/
             if (a[i] != null) {
                 ret.push(a[i]);
             }

@@ -33,7 +33,6 @@ define(function (require) {
             if (rStd.test(str)) {
                 return true;
             }
-            /*jslint eqeq: true */
             if (UA.IE && rIE.test(str) && o.type && rIEType.test(o.type) &&
                     o.cancelBubble != null && o.returnValue != null) {
                 return true;

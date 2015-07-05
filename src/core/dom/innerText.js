@@ -46,7 +46,6 @@ define(function (require) {
             if (conf.cleanDescent) {
                 CLEAN_DESCENT(conf);
             }
-            /*jslint eqeq: true */
             if (el.innerText != null) {
                 el.innerText = conf.text;
             } else if (el.textContent != null) {

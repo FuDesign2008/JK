@@ -88,7 +88,6 @@ define(function (require) {
                     toplevel = false;
 
                     try {
-                        /*jslint eqeq: true*/
                         toplevel = window.frameElement == null;
                     } catch (e) {
                         // do not throw error

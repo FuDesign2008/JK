@@ -22,7 +22,6 @@ define(function (require, exports) {
                 if (IS_PLAIN_OBJ(val)) {
                     ret.push(fnSelf(val, encode));
                 } else {
-                    /*jslint eqeq:true*/
                     val = (val == null) ? '' : val;
                     ret.push(encode ? (encodeURIComponent(key) + '=' +
                                 encodeURIComponent(val)) : (key + '=' + val));

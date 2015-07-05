@@ -63,7 +63,6 @@ define(function (require) {
                     !RCLASS.test(className)) {
                 return;
             }
-            /*jslint regexp: true*/
             className = String(element.className).replace(
                 new RegExp('^|\s+' + ENCODE(className) + '\s+|$', 'g'),
                 ' '

@@ -127,7 +127,6 @@ define(function (require) {
                 var eventDoc,
                     doc,
                     body;
-                /*jslint eqeq: true*/
                 if (raw.pageX != null) {
                     return {
                         x: raw.pageX,
@@ -163,10 +162,8 @@ define(function (require) {
                 var wh,
                     button;
                 // Add which for key events
-                /*jslint eqeq: true*/
                 if (raw.which != null) {
                     wh = raw.which;
-                    /*jslint eqeq: true*/
                 } else if (raw.charCode != null || raw.keyCode != null) {
                     //在ff中keyCode为37， 但charCode为0
                     wh = raw.charCode || raw.keyCode;

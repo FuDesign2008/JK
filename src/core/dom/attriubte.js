@@ -46,7 +46,6 @@ define(function (require) {
             if (!node || !prop) {
                 return false;
             }
-            /*jslint eqeq: true*/
             if (val == null) {
                 return !!(node[prop] != null ||
                         (node.hasAttribute && node.hasAttribute(prop)));

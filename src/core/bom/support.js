@@ -76,7 +76,6 @@ define(function () {
     opt = select.appendChild(document.createElement('option'));
     input = div.getElementsByTagName('input')[0];
 
-    /*jslint regexp: true */
     support = {
         // IE strips leading whitespace when .innerHTML is used
         leadingWhitespace: (div.firstChild.nodeType === 3),

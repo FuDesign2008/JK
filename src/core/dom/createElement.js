@@ -38,11 +38,11 @@ define(function (require, exports) {
      */
 
     return function (tagName, conf) {
-        /*jslint maxlen: 120*/
         //Starting with Gecko 19.0 (Firefox 19.0) createElement(null) works
         //like createElement("null"). Note that Opera stringifies null as well,
         //but Chrome and Internet Explorer will both throw errors.
-        //@see https://developer.mozilla.org/en-US/docs/DOM/document.createElement
+        //@see
+        //https://developer.mozilla.org/en-US/docs/DOM/document.createElement
         if (!tagName) {
             return null;
         }

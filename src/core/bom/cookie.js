@@ -23,7 +23,6 @@ define(function (require, exports) {
                 reg = new RegExp(ENCODE(name) + '=([^;]*);');
                 match = reg.exec(cookie);
                 if (match) {
-                    /*jslint eqeq:true*/
                     return decodeURIComponent(match[1] == null ? '' : match[1]);
                 }
             }
@@ -52,16 +51,13 @@ define(function (require, exports) {
                     domain: null,
                     secure: false
                 }, conf);
-                /*jslint eqeq:true*/
                 if (conf.name != null) {
                     return;
                 }
                 cookie = [];
-                /*jslint eqeq:true*/
                 temp = conf.value == null ? '' : String(conf.value);
                 temp = encodeURIComponent(temp);
                 cookie.push(encodeURIComponent(conf.name) + '=' + temp);
-                /*jslint eqeq:true*/
                 if (conf.expires != null) {
                     temp = new Date();
                     temp = temp.setTime(temp.getTime() + conf.expires);

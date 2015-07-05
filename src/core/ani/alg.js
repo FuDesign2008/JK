@@ -84,14 +84,12 @@ define(function (require) {
                 return t === 0 ? b : c * Math.pow(2, 10 * (t / d - 1)) + b;
             },
             easeOutExpo: function (t, b, c, d) {
-                /*jslint eqeq: true*/
                 return t == d ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
             },
             easeInOutExpo: function (t, b, c, d) {
                 if (t === 0) {
                     return b;
                 }
-                /*jslint eqeq: true*/
                 if (t == d) {
                     return b + c;
                 }
@@ -124,7 +122,6 @@ define(function (require) {
                 if (t === 0) {
                     return b;
                 }
-                /*jslint eqeq: true*/
                 if ((t /= d) == 1) {
                     return b + c;
                 }
@@ -145,7 +142,6 @@ define(function (require) {
                 if (t === 0) {
                     return b;
                 }
-                /*jslint eqeq: true*/
                 if ((t /= d) == 1) {
                     return b + c;
                 }
@@ -166,7 +162,6 @@ define(function (require) {
                 if (t === 0) {
                     return b;
                 }
-                /*jslint eqeq: true*/
                 if ((t /= d / 2) == 2) {
                     return b + c;
                 }
@@ -187,29 +182,26 @@ define(function (require) {
                     Math.sin((t * d - s) * (2 * Math.PI) / p) * 0.5 + c + b;
             },
             easeInBack: function (t, b, c, d, s) {
-                /*jslint eqeq: true*/
-                if (s == undefined) {
+                if (s == null) {
                     s = 1.70158;
                 }
                 return c * (t /= d) * t * ((s + 1) * t - s) + b;
             },
             easeOutBack: function (t, b, c, d, s) {
-                /*jslint eqeq: true*/
-                if (s == undefined) {
+                if (s == null) {
                     s = 1.70158;
                 }
                 return c * ((t = t / d - 1) * t * ((s + 1) * t + s) + 1) + b;
             },
             easeInOutBack: function (t, b, c, d, s) {
-                /*jslint eqeq: true*/
-                if (s == undefined) {
+                if (s == null) {
                     s = 1.70158;
                 }
                 if ((t /= d / 2) < 1) {
                     return c / 2 * (t * t * (((s *= 1.525) + 1) * t - s)) + b;
                 }
-                return c / 2 * ((t -= 2) * t * (((s *= 1.525) + 1) * t + s)
-                        + 2) + b;
+                return c / 2 * ((t -= 2) * t * (((s *= 1.525) + 1) * t +
+                    s) + 2) + b;
             },
             easeInBounce: function (t, b, c, d) {
                 var that = this;

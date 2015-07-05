@@ -11,7 +11,6 @@ define(function (require) {
      * @return {String}
      */
     return function (s) {
-        /*jslint regexp: true*/
         return String(s).replace(/-+([^\-])?/g, function (match, ch) {
             return ch ? ch.toUpperCase() : "";
         });

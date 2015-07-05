@@ -10,7 +10,6 @@
 
 define(function (require) {
 
-    /*jslint maxlen:120 */
     var START_WITH = require('../../core/str/startsWith'),
         END_WITH = require('../../core/str/endsWith'),
         R_ABS = /^(?:([A-Za-z]+):(\/{0,3}))?([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/,

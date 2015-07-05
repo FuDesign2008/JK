@@ -50,7 +50,6 @@ define(function (require) {
         }
         //
         temp = el.style[prop];
-        /*jslint eqeq: true*/
         if (temp != null) {// if has inline style
             return temp;
         }

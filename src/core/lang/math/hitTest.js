@@ -28,7 +28,6 @@ define(function (require) {
             y1 = rect.y1,
             x,
             y;
-        /*jslint eqeq:true*/
         if (point.x != null) {//为点
             x = point.x;
             y = point.y;

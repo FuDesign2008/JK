@@ -38,7 +38,6 @@ define(function () {
             reHeight = height,
             resize = false,
             byWidth = false;
-        /*jslint eqeq: true*/
         if (maxWidth != null && reWidth > maxWidth) {
             reHeight = (maxWidth * reHeight) / reWidth;
             reWidth = maxWidth;
@@ -51,7 +50,6 @@ define(function () {
             byWidth = true;
         }
         //
-        /*jslint eqeq: true*/
         if (maxHeight != null && reHeight > maxHeight) {
             reWidth = (maxHeight * reWidth) / reHeight;
             reHeight = maxHeight;

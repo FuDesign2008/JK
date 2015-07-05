@@ -113,7 +113,6 @@ define(function (require) {
                 scriptHandler(conf, script);
                 runOnResovle();
             };
-            /*jslint todo: true*/
             //FF,Chrome，如果加载过程中出现错误，继续加载其余的script文件
             //TODO opera不支持onerror事件,在文件加载过程中出错时，不可继续加载
             //ie6-8 不支持onerror事件，在文件加载过程中出错时，可继续加载

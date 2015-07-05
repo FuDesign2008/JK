@@ -35,7 +35,6 @@ define(function (require) {
         }
 
         caller = arguments.callee.caller;
-        /*jslint eqeq:true */
         while (caller != null && counter < STEPS) {
             event = caller['arguments'][0];
             // whether is fixed Event object

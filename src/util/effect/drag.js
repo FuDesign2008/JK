@@ -107,7 +107,6 @@ define(function (require) {
             if (!disableSelect) {
                 return;
             }
-            /*jslint eqeq:true*/
             if (unselect_event == null) {
                  //Some day in the future?
                 if (!TYPE.isUndef(target.style.userSelect)) {

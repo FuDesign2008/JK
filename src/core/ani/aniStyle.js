@@ -32,7 +32,7 @@ define(function (require) {
             var val,
                 n,
                 style = obj.style;
-            /*jslint eqeq:true*/
+
             if (obj.start == null) {
                 val = GET_STYLE(el, style);
                 if (val.indexOf('#') === 0) {// color

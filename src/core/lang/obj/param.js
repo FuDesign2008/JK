@@ -58,7 +58,6 @@ define(function (require) {
                         conf[prop] = fnSelf(value);
                     } else if (type === 'array') {
                         conf[prop] = [].concat(value);
-                        /*jslint eqeq:true*/
                     } else if (value != null) {
                         conf[prop] = value;
                     }

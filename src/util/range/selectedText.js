@@ -13,7 +13,6 @@ define(function (require) {
     var SELECTION = require('./selection');
     return function () {
         var obj = SELECTION();
-        /*jslint eqeq: true*/
         if (obj.text  != null) {
             return obj.text;
         }

@@ -19,7 +19,6 @@ define(function (require) {
              * @param {String} name
              */
             get: function (name) {
-                /*jslint eqeq: true*/
                 if (name && TYPE.isStr(name) && bigCache[name] != null) {
                     return bigCache[name];
                 }

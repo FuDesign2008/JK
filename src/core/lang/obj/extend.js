@@ -59,7 +59,6 @@ define(function (require) {
                 obj = over[i];
                 if (!TYPE.isObj(obj)) {
                     for (p in base) {
-                        /*jslint eqeq:true*/
                         if (obj[p] != null) {
                             if (IS_EXTEND_ABLE_OBJ(base[p])) {
                                 if (deep) {
@@ -97,11 +96,9 @@ define(function (require) {
                 obj = extend[i];
                 if (TYPE.isObj(obj)) {
                     for (p in obj) {
-                        /*jslint eqeq:true*/
                         if (obj[p] != null) {
                             if (TYPE.isObj(obj[p])) {
                                 if (deep) {
-                                    /*jslint eqeq:true*/
                                     if (base[p] == null &&
                                             (!proto ||
                                             (proto && obj.hasOwnProperty(p)))) {

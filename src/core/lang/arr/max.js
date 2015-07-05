@@ -23,7 +23,6 @@ define(function () {
 
         for (i = 1; i < l; i++) {
             temp = arr[i];
-            /*jslint eqeq:true*/
             if (temp != null) {
                 if (max < temp) {
                     max = temp;

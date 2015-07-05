@@ -27,7 +27,6 @@ define(function () {
      *          默认为object
      */
     return function (o) {
-        /*jslint eqeq: true */
         return o == null ? String(o) :
                 (GENERAL[(PATTERN.exec(TO_STRING.call(o))[1])] || 'object');
     };
