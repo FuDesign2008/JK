@@ -62,9 +62,9 @@ define(function (require) {
             lastMouseX,
             lastMouseY,
             lastXY,
-            unselect_event = null,
-            unselect_css = null,
-            unselect_val = null,
+            unselectEvent = null,
+            unselectCss = null,
+            unselectVal = null,
             disableSelect = conf.disableSelect,
             target = conf.target,
             related = [],
@@ -107,16 +107,16 @@ define(function (require) {
             if (!disableSelect) {
                 return;
             }
-            if (unselect_event == null) {
+            if (unselectEvent == null) {
                  //Some day in the future?
                 if (!TYPE.isUndef(target.style.userSelect)) {
-                    unselect_css = 'userSelect';
+                    unselectCss = 'userSelect';
                 } else if (!TYPE.isUndef(target.style.webkitUserSelect)) {
                     //Webkit route
-                    unselect_css = 'webkitUserSelect';
+                    unselectCss = 'webkitUserSelect';
                 } else if (!TYPE.isUndef(target.style.MozUserSelect)) {
                     //Firefox route
-                    unselect_css = 'MozUserSelect';
+                    unselectCss = 'MozUserSelect';
                 } else if (!TYPE.isUndef(target.onselectstart)) {
                     //IE route
                     BIND(target, 'selectstart' + unselectNS, function (event) {
@@ -128,25 +128,25 @@ define(function (require) {
                     });
                 }
                 //
-                if (unselect_css) {
-                    unselect_val = GET_STYLE(target, unselect_css) || '';
-                    unselect_event = false;
+                if (unselectCss) {
+                    unselectVal = GET_STYLE(target, unselectCss) || '';
+                    unselectEvent = false;
                 } else {
-                    unselect_event = true;
+                    unselectEvent = true;
                 }
             }
-            if (unselect_event === false) {
-                SET_STYLE(target, unselect_css, 'none');
+            if (unselectEvent === false) {
+                SET_STYLE(target, unselectCss, 'none');
             }
         };
         cancelDisableSelect = function () {
             if (!disableSelect) {
                 return;
             }
-            if (unselect_event) {
+            if (unselectEvent) {
                 UNBIND(target, unselectNS);
             } else {
-                SET_STYLE(target, unselect_css, unselect_val);
+                SET_STYLE(target, unselectCss, unselectVal);
             }
         };
         /**

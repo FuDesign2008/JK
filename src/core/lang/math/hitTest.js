@@ -9,7 +9,7 @@
  * @date   2011-12-13
  * @time   上午11:15:27
  */
-define(function (require) {
+define(function () {
     /**
      *
      * @param {Object} rect 长方形， rect.x0, rect.y0 表示左上角的顶点，

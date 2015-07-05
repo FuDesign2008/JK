@@ -1,7 +1,8 @@
 
 
 
-define(function (require, exports) {
+define(function () {
+
     /**
      * Checks if the string ends with substring.
      * @param {String} s 字符串

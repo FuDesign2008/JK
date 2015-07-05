@@ -4,10 +4,10 @@
  * @date   2011-11-14
  * @time   下午04:44:13
  * @example
- *          var temp ="hello, {{userName}}, you are a {{sex}} cat!";
+ *          var temp ='hello, {{userName}}, you are a {{sex}} cat!';
  *          var data = {
- *                      userName:"kitty",
- *                      sex:"female"
+ *                      userName:'kitty',
+ *                      sex:'female'
  *                      }
  *          //hello, kitty, you are a female cat!
  *          var hint = substitute(temp, data);
@@ -20,8 +20,8 @@ define(function (require) {
         REG = /\{\{([0-9a-zA-Z_\-]+)\}\}/g;
 
     return function (str, data) {
-        if (str && data && GET_TYPE(str) === "string" &&
-                GET_TYPE(data) === "object") {
+        if (str && data && GET_TYPE(str) === 'string' &&
+                GET_TYPE(data) === 'object') {
             str = str.replace(REG, function (whole, $1) {
                 return data.hasOwnProperty($1) ? data[$1] : whole;
             });

@@ -1,7 +1,8 @@
 
 
 
-define(function (require, exports) {
+define(function () {
+
     /**
      *  (Strips all leading and trailing whitespace from a string)
      * @param {String} s 字符串

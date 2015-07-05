@@ -9,7 +9,8 @@
 
 
 
-define(function (require, exports) {
+define(function (require) {
+
     var TYPE = require('../obj/type'),
         FOR_OWN = require('../obj/forOwn'),
         console = require('../debug/console');
@@ -20,7 +21,7 @@ define(function (require, exports) {
     Atom.prototype = {
         __classChain: Atom,
         __classNames: 'Atom',
-        __init: function (conf) {
+        __init: function (/*conf*/) {
         },
         getClassChain: function () {
             return this.__classChain;

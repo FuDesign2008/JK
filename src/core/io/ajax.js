@@ -47,6 +47,7 @@ define(function (require) {
      * @return {Object} XMLHttpRequest 对象
      *
      */
+    /*jshint maxstatements: 36*/
     return function (conf) {
         conf = PARAM({
             url: null,
@@ -132,7 +133,8 @@ define(function (require) {
         isFnOnSuccess = TYPE.isFn(conf.onSuccess);
         isFnOnFail = TYPE.isFn(conf.onFail);
         isFnOnStateChange = TYPE.isFn(conf.onStateChange);
-        //
+
+        /*jshint maxcomplexity: 14*/
         handler = function () {
             if (xhr.readyState === 4) {
                 window.clearTimeout(timeoutID);

@@ -6,22 +6,24 @@
  */
 
 
+/*jshint maxcomplexity:19*/
 define(function () {
+
     var ua = navigator.userAgent.toLowerCase(),
         external = window.external || '',
         core,
         m,
         extra,
         version,
-        os;
+        os,
+        numberify = function (s) {
+            var c = 0;
+            return parseFloat(s.replace(/\./g, function () {
+                c += 1;
+                return (c === 1) ? '' : '.';
+            }));
+        };
 
-    var numberify = function (s) {
-        var c = 0;
-        return parseFloat(s.replace(/\./g, function () {
-            c += 1;
-            return (c === 1) ? '' : '.';
-        }));
-    };
     try {
         if ((/windows|win32/).test(ua)) {
             os = 'windows';
@@ -49,6 +51,7 @@ define(function () {
                 version = numberify(m[1]);
             }
         }
+        /*jshint camelcase: false*/
         if (/world/.test(ua)) {
             extra = 'world';
         } else if (/360se/.test(ua)) {
@@ -64,19 +67,20 @@ define(function () {
     } catch (e) {
         //do nothing
     }
+
     return {
         //系统
         'OS': os,
-        'WIN': os === "windows",
-        'MAC': os === "macintosh",
-        'RHINO': os === "rhino",
+        'WIN': os === 'windows',
+        'MAC': os === 'macintosh',
+        'RHINO': os === 'rhino',
         //排版引擎
         'CORE': core,
         'VERSION': version,
-        'WEBKIT': core === "webkit",
-        'PRESTO': core === "presto",
-        'TRIDENT': core === "trident",
-        'GECKO': core === "gecko",
+        'WEBKIT': core === 'webkit',
+        'PRESTO': core === 'presto',
+        'TRIDENT': core === 'trident',
+        'GECKO': core === 'gecko',
         //浏览器版本
         'IE': /msie/.test(ua),
         'OPERA': /opera/.test(ua),

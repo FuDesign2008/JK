@@ -16,7 +16,7 @@ define(function (require) {
             len,
             childNodes,
             retArr = [],
-            isNode = function (node, index) {
+            isNode = function (/*node, index*/) {
                 return true;
             };
         filter = TYPE.isFn(filter) ? filter : isNode;

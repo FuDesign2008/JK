@@ -7,7 +7,7 @@
 
 
 
-define(function (require) {
+define(function () {
     /**
      * @param {Array}
      *            a 数值

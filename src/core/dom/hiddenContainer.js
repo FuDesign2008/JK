@@ -1,7 +1,7 @@
 
 
 
-define(function (require, exports) {
+define(function (require) {
     var NODE_TYPE = require('./nodeType'),
         div,
         init = function () {

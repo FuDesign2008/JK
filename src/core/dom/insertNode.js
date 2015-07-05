@@ -6,7 +6,8 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
+
     var INSERT = require('./insert');
     /**
      * @param {Node} node

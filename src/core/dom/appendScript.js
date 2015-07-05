@@ -6,7 +6,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var PARAM = require('../obj/param'),
         DOC = document,
         HEAD =  DOC.head || DOC.getElementsByTagName('head')[0] ||

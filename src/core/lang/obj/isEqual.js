@@ -9,22 +9,25 @@
 
 define(function (require) {
     var TYPE  = require('./type'),
-        FOR_OWN = require('./forOwn');
+        FOR_OWN = require('./forOwn'),
+        isEqual;
+
     /***
      *
      * @param {Object} a
      * @param {Object} b
      */
-    return function (a, b) {
-        var ret = true,
-            fnSelf = arguments.callee;
+    isEqual =  function (a, b) {
+        var ret = true;
+
         if (!TYPE.isObj(a) || !TYPE.isObj(b)) {
             return false;
         }
+
         FOR_OWN(a, function (val, key) {
             var bOwn, bVal = b[key];
             if (TYPE.isObj(val) && TYPE.isObj(bVal)) {
-                ret = fnSelf(val, bVal);
+                ret = isEqual(val, bVal);
                 if (ret === false) {
                     //阻止 forOwn
                     return false;
@@ -62,7 +65,7 @@ define(function (require) {
             FOR_OWN(b, function (val, key) {
                 var aOwn, aVal = a[key];
                 if (TYPE.isObj(val) && TYPE.isObj(aVal)) {
-                    ret = fnSelf(val, aVal);
+                    ret = isEqual(val, aVal);
                     if (ret === false) {
                         //阻止 forOwn
                         return false;
@@ -82,4 +85,6 @@ define(function (require) {
         //
         return ret;
     };
+
+    return isEqual;
 });

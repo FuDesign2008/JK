@@ -12,6 +12,7 @@ define(function (require) {
 
     var START_WITH = require('../../core/str/startsWith'),
         END_WITH = require('../../core/str/endsWith'),
+        /*jshint maxlen: 120*/
         R_ABS = /^(?:([A-Za-z]+):(\/{0,3}))?([0-9.\-A-Za-z]+)(?::(\d+))?(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/,
         ABS_NAMES = ['url', 'protocol', 'slash', 'host', 'port', 'path', 'search', 'hash'],
         R_REL = /^(?:\/([^?#]*))?(?:\?([^#]*))?(?:#(.*))?$/,
@@ -35,6 +36,7 @@ define(function (require) {
      * @param {String} url or urlHash
      * @return {Object}
      */
+    /*jshint maxcomplexity: 15*/
     return function (url) {
         if (!url) {
             return null;

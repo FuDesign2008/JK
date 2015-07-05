@@ -69,7 +69,6 @@
     "passfail": false,
     "white": false,
     "predef": {
-        "define": false,
-        "-Image": true
+        "define": false
     }
 }

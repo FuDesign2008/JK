@@ -38,6 +38,7 @@
  */
 
 
+/*jshint maxstatements: false, maxcomplexity: 16*/
 define(function () {
     var div = document.createElement('div'),
         all,
@@ -271,6 +272,7 @@ define(function () {
             if (testObject.hasOwnProperty(i)) {
                 eventName = 'on' + i;
                 isSupported = (eventName in div);
+                /*jshint maxdepth: 4*/
                 if (!isSupported) {
                     div.setAttribute(eventName, 'return;');
                     isSupported = (typeof div[eventName] === 'function');

@@ -1,7 +1,8 @@
 
 
 
-define(function (require, exports) {
+define(function () {
+
     /**
      *  Converts a string as a capitalized string.
      * @param {String} s 字符串

@@ -6,7 +6,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var TYPE = require('../obj/type'),
         PARAM = require('../obj/param'),
         APPEND_SCRIPT = require('../dom/appendScript'),

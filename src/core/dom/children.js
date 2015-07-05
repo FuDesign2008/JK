@@ -1,7 +1,7 @@
 
 
 
-define(function (require, exports) {
+define(function (require) {
     var TYPE = require('../obj/type');
     /**
      * 根据条件获取所有符合条件的子元素节点
@@ -16,7 +16,7 @@ define(function (require, exports) {
             len,
             children,
             retArr = [],
-            isNode = function (node, index) {
+            isNode = function (/*node, index*/) {
                 return true;
             };
         filter = TYPE.isFn(filter) ? filter : isNode;

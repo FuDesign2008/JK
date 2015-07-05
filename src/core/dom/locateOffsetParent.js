@@ -36,6 +36,7 @@ define(function (require) {
      *              obj.x {Integer}
      *              obj.y {Integer}
      */
+    /*jshint maxcomplexity: 13*/
     return function (el) {
         el = ELEMENT(el);
         if (!el) {
@@ -68,6 +69,7 @@ define(function (require) {
                 }
                 temp1 = el;
                 do {
+                    /*jshint maxdepth: 4*/
                     if (leftNaN) {
                         leftX += temp1.offsetLeft;
                     }

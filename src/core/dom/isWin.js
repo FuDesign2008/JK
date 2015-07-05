@@ -9,7 +9,7 @@
  */
 
 
-define(function (require, exports) {
+define(function () {
     /**
      * @param {Object} obj
      * @return {Boolean}

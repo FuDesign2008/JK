@@ -5,7 +5,8 @@
 
 
 
-define(function (require) {
+define(function () {
+
     /**
      * @param {String}
      *            s 字符串

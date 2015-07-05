@@ -76,6 +76,7 @@ define(function (require) {
             onProgress = TYPE.isFn(conf.onProgress) ? conf.onProgress : null,
             onComplete = TYPE.isFn(conf.onComplete) ? conf.onComplete : null,
             runningHandle,
+            /*jshint maxcomplexity: 14, maxdepth: 4*/
             run = function () {
                 if (status === PAUSED || isCanceled) {
                     return;

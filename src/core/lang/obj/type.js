@@ -6,7 +6,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var GET_TYPE = require('./getType');
 
     return {

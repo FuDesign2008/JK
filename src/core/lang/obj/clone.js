@@ -7,7 +7,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var GET_TYPE =  require('./getType'),
         FOR_OWN = require('./forOwn'),
         IS_PLAIN_OBJ = require('./isPlainObj'),
@@ -15,14 +15,14 @@ define(function (require, exports) {
             var type = GET_TYPE(obj),
                 ret,
                 fnSelf = clone;
-            if (type === "object" && IS_PLAIN_OBJ(obj)) {
+            if (type === 'object' && IS_PLAIN_OBJ(obj)) {
                 ret = {};
                 FOR_OWN(obj, function (val, prop) {
                     ret[prop] = fnSelf(val);
                 });
                 return ret;
             }
-            if (type === "array") {
+            if (type === 'array') {
                 return [].concat(obj);
             }
             return obj;

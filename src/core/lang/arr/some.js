@@ -7,7 +7,7 @@
 
 
 
-define(function (require, exports) {
+define(function () {
     /**
      * @param {Array} a 数值
      * @param {Function} fn 回调函数

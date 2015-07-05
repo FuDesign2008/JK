@@ -84,13 +84,14 @@ define(function (require) {
                 return t === 0 ? b : c * Math.pow(2, 10 * (t / d - 1)) + b;
             },
             easeOutExpo: function (t, b, c, d) {
-                return t == d ? b + c : c * (-Math.pow(2, -10 * t / d) + 1) + b;
+                return t === d ? b + c : c *
+                    (-Math.pow(2, -10 * t / d) + 1) + b;
             },
             easeInOutExpo: function (t, b, c, d) {
                 if (t === 0) {
                     return b;
                 }
-                if (t == d) {
+                if (t === d) {
                     return b + c;
                 }
                 if ((t /= d / 2) < 1) {
@@ -110,6 +111,7 @@ define(function (require) {
                 }
                 return c / 2 * (Math.sqrt(1 - (t -= 2) * t) + 1) + b;
             },
+            /*jshint maxparams: 6*/
             /**
              *
              * @param {Integer} t  current time（当前计算次数）
@@ -122,7 +124,7 @@ define(function (require) {
                 if (t === 0) {
                     return b;
                 }
-                if ((t /= d) == 1) {
+                if ((t /= d) === 1) {
                     return b + c;
                 }
                 if (!p) {
@@ -137,12 +139,13 @@ define(function (require) {
                 return -(a * Math.pow(2, 10 * (t -= 1)) *
                         Math.sin((t * d - s) * (2 * Math.PI) / p)) + b;
             },
+            /*jshint maxparams: 6*/
             easeOutElastic: function (t, b, c, d, a, p) {
                 var s;
                 if (t === 0) {
                     return b;
                 }
-                if ((t /= d) == 1) {
+                if ((t /= d) === 1) {
                     return b + c;
                 }
                 if (!p) {
@@ -162,7 +165,7 @@ define(function (require) {
                 if (t === 0) {
                     return b;
                 }
-                if ((t /= d / 2) == 2) {
+                if ((t /= d / 2) === 2) {
                     return b + c;
                 }
                 if (!p) {
@@ -252,6 +255,7 @@ define(function (require) {
                 alg[type] = alg[type] || fn;
             }
         },
+        /*jshint maxparams: 7*/
         /**
          * 使用算法进行计算
          * @param {String} type  算法类型

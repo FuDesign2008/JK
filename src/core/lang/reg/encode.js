@@ -1,7 +1,8 @@
 
 
 
-define(function (require, exports) {
+define(function () {
+
     /**
      *  转义正则表达式中的特殊字符
      * @param {String}
@@ -9,6 +10,6 @@ define(function (require, exports) {
      * @returns {String}
      */
     return function (s) {
-        return String(s).replace(/([.*?\^$=!:{}()|\[\]\/\\+])/g, "\\$1");
+        return String(s).replace(/([.*?\^$=!:{}()|\[\]\/\\+])/g, '\\$1');
     };
 });

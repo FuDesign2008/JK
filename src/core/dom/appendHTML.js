@@ -4,7 +4,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var INSERT_HTML = require('./insertHTML');
     /**
      * @param {HTMLElement}

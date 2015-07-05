@@ -32,11 +32,11 @@ define(function (require) {
         TO_ARRAY = require('../arr/toArray'),
         FOR_EACH = require('../arr/forEach'),
         FOR_OWN = require('./forOwn'),
-        IS_PLAIN_OBJ = require('./isPlainObj');
+        IS_PLAIN_OBJ = require('./isPlainObj'),
+        param;
     //
-    return function () {
+    param =  function () {
         var conf = {},
-            fnSelf = arguments.callee,
             type;
         FOR_EACH(TO_ARRAY(arguments), function (item) {
             if (IS_PLAIN_OBJ(item)) {
@@ -46,7 +46,7 @@ define(function (require) {
                          return;
                     }
                     if (IS_PLAIN_OBJ(value)) {
-                        conf[prop] = fnSelf(value);
+                        conf[prop] = param(value);
                     } else if (TYPE.isArr(value)) {
                         conf[prop] = [].concat(value);
                     }else if (!TYPE.isUndef(value)) {
@@ -55,7 +55,7 @@ define(function (require) {
                     //出于性能考虑
                     type = GET_TYPE(value);
                     if (type === 'object' && IS_PLAIN_OBJ(value)) {
-                        conf[prop] = fnSelf(value);
+                        conf[prop] = param(value);
                     } else if (type === 'array') {
                         conf[prop] = [].concat(value);
                     } else if (value != null) {
@@ -66,4 +66,6 @@ define(function (require) {
         });
         return conf;
     };
+
+    return param;
 });

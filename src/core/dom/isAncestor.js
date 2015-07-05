@@ -7,7 +7,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var CONTAINS = require('./contains'),
         NODE_TYPE = require('./nodeType');
     /**

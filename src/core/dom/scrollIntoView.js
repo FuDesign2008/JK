@@ -7,7 +7,7 @@
  */
 
 
-define(function (require, exports) {
+define(function () {
 
     /**
      * {Object} conf
@@ -19,6 +19,7 @@ define(function (require, exports) {
      * @param {} conf.offsetX
      * @param {} conf.offsetY
      */
-    return function (conf) {
+    return function (/*conf*/) {
+        // TODO
     };
 });

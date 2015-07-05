@@ -6,7 +6,8 @@
  */
 
 
-define(function (require, exports) {
+define(function () {
+
     var prefix = String(new Date().getTime()),
         counter = 0;
     return function () {

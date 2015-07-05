@@ -8,7 +8,8 @@
 
 
 
-define(function (require, exports) {
+define(function (require) {
+
     var TYPE = require('../../core/obj/type'),
         IS_TAG = require('../../core/dom/isTag'),
         PARAM = require('../../core/obj/param'),

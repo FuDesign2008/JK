@@ -6,7 +6,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var IS_ANCESTOR = require('./isAncestor'),
         LOCATE_DOC = require('./locateDoc'),
         ELEMENT = require('./element');

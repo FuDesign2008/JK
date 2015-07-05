@@ -8,7 +8,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var TYPE = require('../obj/type'),
         PARAM = require('../obj/param');
 

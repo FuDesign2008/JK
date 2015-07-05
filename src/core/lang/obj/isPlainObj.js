@@ -21,14 +21,15 @@ define(function (require) {
             return false;
         }
         // Not own constructor property must be Object
-        if (obj.constructor && !HAS_OWN.call(obj, "constructor") &&
-                !HAS_OWN.call(obj.constructor.prototype, "isPrototypeOf")) {
+        if (obj.constructor && !HAS_OWN.call(obj, 'constructor') &&
+                !HAS_OWN.call(obj.constructor.prototype, 'isPrototypeOf')) {
             return false;
         }
 
         // Own properties are enumerated firstly, so to speed up,
         // if last one is own, then all properties are own.
         var key;
+        /*jshint noempty: false*/
         for (key in obj) {
             //do nothing
         }

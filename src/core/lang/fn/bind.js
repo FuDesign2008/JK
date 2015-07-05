@@ -22,7 +22,7 @@ define(function (require) {
      */
     return function (fn, context) {
         if (TYPE.isFn(fn)) {
-            console.error("[core/fn/bind] param -> fn is not function !");
+            console.error('[core/fn/bind] param -> fn is not function !');
             return;
         }
         var bound,

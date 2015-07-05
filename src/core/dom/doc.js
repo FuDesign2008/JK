@@ -6,7 +6,7 @@
  */
 
 
-define(function (require, exports) {
+define(function () {
     return function (el) {
         return (el && (el.document || el.ownerDocument)) || document;
     };

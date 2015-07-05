@@ -38,7 +38,8 @@ define(function (require) {
          *                      否则拷贝对象hasOwnProperty的属性,
          *                      默认为false
          */
-        extend_fn = function (conf) {
+        /*jshint maxstatements: 36, maxcomplexity: 35*/
+        extendFn = function (conf) {
             if (!conf || !IS_EXTEND_ABLE_OBJ(conf.base) ||
                     (!conf.over && !conf.extend)) {
                 return null;
@@ -48,7 +49,7 @@ define(function (require) {
                 base = conf.base,
                 over = TYPE.isArr(conf.over) ? conf.over : [conf.over],
                 extend = TYPE.isArr(conf.extend) ? conf.extend : [conf.extend],
-                fnSelf = extend_fn,
+                fnSelf = extendFn,
                 //
                 i,
                 l = over.length,
@@ -59,6 +60,7 @@ define(function (require) {
                 obj = over[i];
                 if (!TYPE.isObj(obj)) {
                     for (p in base) {
+                        /*jshint maxdepth: 7*/
                         if (obj[p] != null) {
                             if (IS_EXTEND_ABLE_OBJ(base[p])) {
                                 if (deep) {
@@ -135,5 +137,5 @@ define(function (require) {
             return base;
         };
     //
-    return extend_fn;
+    return extendFn;
 });

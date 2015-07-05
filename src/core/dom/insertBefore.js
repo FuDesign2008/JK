@@ -1,7 +1,7 @@
 
 
 
-define(function (require, exports) {
+define(function () {
     /**
      * @param {Node} newNode
      * @param {Node} node

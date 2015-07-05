@@ -6,7 +6,8 @@
 
 
 
-define(function (require, exports) {
+define(function (require) {
+
     var TYPE = require('../../core/obj/type'),
         DESTROY = require('../../core/obj/destroy');
     /**

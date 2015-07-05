@@ -1,7 +1,7 @@
 
 
 
-define(function (require, exports) {
+define(function (require) {
     var DOC = require('./doc');
     /**
      *  计算整个页面的高度和宽度(scrollBar不包含在内)

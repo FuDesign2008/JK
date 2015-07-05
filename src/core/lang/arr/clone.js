@@ -5,7 +5,7 @@
 
 
 
-define(function (require, exports) {
+define(function () {
     /**
      * @param {Array} a 数组
      * @returns {Array}

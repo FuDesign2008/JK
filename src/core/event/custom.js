@@ -145,7 +145,7 @@ define(function (require) {
             FOR_OWN(customEvents, function (objHandlers, theType) {
                 if (theType === type || START_WITH(theType, typeDot)) {
                     if (objHandlers) {
-                        FOR_OWN(objHandlers, function (arrHandlers, guid) {
+                        FOR_OWN(objHandlers, function (arrHandlers/*, guid*/) {
                             FOR_EACH(arrHandlers, function (handlerObj) {
                                 handlerObj.fn.apply(obj, [{
                                     type: type,

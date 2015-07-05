@@ -9,9 +9,9 @@
  */
 
 
-define(function (require, exports) {
-    var IE6 = require('../../core/bom/ua').IE6,
-        HREF = 'href="javascript:void(0);" onclick="return false;" ',
+define(function () {
+
+    var HREF = 'href="javascript:void(0);" onclick="return false;" ',
         rClick = /onclick\=(['"])return\s+false;?\1/gi,
         rHref = /\shref\=(['"])(javascript:)?(void\(0\))?;?\1\s?/gi;
 

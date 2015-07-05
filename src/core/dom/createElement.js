@@ -19,7 +19,7 @@
 
 
 
-define(function (require, exports) {
+define(function (require) {
     var FOR_OWN = require('../obj/forOwn'),
         TYPE = require('../obj/type'),
         SET_STYLE = require('./setStyle'),

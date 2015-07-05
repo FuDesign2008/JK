@@ -17,6 +17,7 @@ define(function (require) {
      * @param {String} prop
      *
      */
+    /*jshint maxcomplexity: 13*/
     return function (el, prop) {
         el = ELEMENT(el);
         if (!el || !prop) {

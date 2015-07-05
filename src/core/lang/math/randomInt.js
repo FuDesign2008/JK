@@ -6,7 +6,7 @@
  */
 
 
-define(function (require, exports) {
+define(function () {
 
     /**
      *

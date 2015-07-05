@@ -12,11 +12,9 @@
 
 define(function (require) {
     var PARAM = require('../../core/obj/param'),
-        DESTROY = require('../../core/obj/destroy'),
         BIND = require('../../core/event/bind'),
         UNBIND = require('../../core/event/unbind'),
         ACTIVE = require('../../core/dom/active'),
-        GET_STYLE = require('../../core/dom/getStyle'),
         SET_STYLE = require('../../core/dom/setStyle'),
         IS_INPUT = require('./isInput'),
         UNIQUE = require('../../core/math/unique'),

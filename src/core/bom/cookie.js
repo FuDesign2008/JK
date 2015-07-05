@@ -6,7 +6,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var PARAM = require('../obj/param'),
         ENCODE = require('../reg/encode'),
         TYPE = require('../obj/type');

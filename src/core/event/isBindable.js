@@ -5,7 +5,7 @@
  */
 
 
-define(function (require, exports) {
+define(function () {
 
     /**
      * 粗劣方法判断一个对象是否能绑定事件

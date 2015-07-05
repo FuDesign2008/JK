@@ -11,7 +11,7 @@
 
 
 
-define(function (require, exports) {
+define(function (require) {
     var TYPE = require('../obj/type'),
         FOR_EACH = require('../arr/forEach'),
         EVENT = require('./event'),
@@ -22,7 +22,7 @@ define(function (require, exports) {
      *
      * @param {Node} el 事件对象，支持window, document
      * @param {String} types 事件类型，支持一级域名，支持多个类型
-     *              例  "click.page  mouseover.global"
+     *              例  'click.page  mouseover.global'
      * @param {Function} handler 事件监听器
      * @param {Any} data  可选，传递至事件监听器的数据，任意值
      */
@@ -69,7 +69,7 @@ define(function (require, exports) {
                 el._eventHandlers[type][guid] = [];
             }
             el._eventHandlers[type][guid].push(eventHandler);
-            dotIndex = type.indexOf(".");
+            dotIndex = type.indexOf('.');
             type = (dotIndex > -1) ? type.substring(0, dotIndex) : type;
             ADD(el, type, eventHandler);
         });

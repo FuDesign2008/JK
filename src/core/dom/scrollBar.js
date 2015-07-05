@@ -45,7 +45,7 @@ define(function () {
             return el && el.scrollHeight > el.clientHeight;
         },
 
-        hasHorizontal: function () {
+        hasHorizontal: function (el) {
             return el && el.scrollWidth > el.clientWidth;
         }
 

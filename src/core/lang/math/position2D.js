@@ -8,7 +8,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var HIT_TEST = require('./hitTest');
 
     /**

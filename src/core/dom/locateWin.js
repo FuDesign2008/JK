@@ -6,10 +6,8 @@
  */
 
 
-define(function (require, exports) {
-    var IS_VISIBLE = require('./isVisible'),
-        IS_TAG = require('./isTag'),
-        DOC_SCROLL = require('./docScroll'),
+define(function (require) {
+    var DOC_SCROLL = require('./docScroll'),
         LOCATE_DOC = require('./locateDoc');
     /**
      * @param {HTMLElement} el

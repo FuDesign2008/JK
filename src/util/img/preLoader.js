@@ -6,16 +6,14 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var TYPE = require('../../core/obj/type'),
         PARAM = require('../../core/obj/param'),
         DESTROY = require('../../core/obj/destroy'),
         FOR_EACH = require('../../core/obj/forEach'),
         PRE_LOAD = require('../img/preLoad'),
-        console = require('../../core/debug/console'),
-        STATE_WATING = 0,
-        STATE_ERROR = 1,
-        STATE_LOADED = 2;
+        console = require('../../core/debug/console');
+
     /**
      * @param {Object} conf
      * @param {Integer} conf.time  加载超时时间,默认 30000 ms
@@ -29,7 +27,7 @@ define(function (require, exports) {
             cacheLimit: 200
         }, conf);
         if (conf.time <= 0) {
-            console.error("[util.img.preLoader] param is not valid!");
+            console.error('[util.img.preLoader] param is not valid!');
             return;
         }
         var TIME = conf.time,

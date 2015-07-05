@@ -6,7 +6,8 @@
  */
 
 
-define(function (require) {
+define(function () {
+
     /**
      * 编码
      * @param {String} str

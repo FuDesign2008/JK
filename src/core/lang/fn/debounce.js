@@ -17,7 +17,7 @@ define(function (require) {
      * @return {Function}
      */
     return function (callback, delay) {
-        if (GET_TYPE(callback) !== "function") {
+        if (GET_TYPE(callback) !== 'function') {
             return;
         }
         delay = delay || 150;

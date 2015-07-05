@@ -21,6 +21,7 @@ define(function (require) {
             for (prop in obj) {
                 if (obj.hasOwnProperty(prop)) {
                     ret = fn(obj[prop], prop);
+                    /*jshint maxdepth: 4*/
                     if (ret === false) {
                         return;
                     }

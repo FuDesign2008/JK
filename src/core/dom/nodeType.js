@@ -6,7 +6,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var TYPE = require('../obj/type');
     /**
      * @see  http://www.w3.org/TR/REC-DOM-Level-1/level-one-core.html

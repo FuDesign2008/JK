@@ -1,7 +1,8 @@
 
 
 
-define(function (require) {
+define(function () {
+
     /**
      *  Converts a string separated by dashes into a camelCase
      *  equivalent. For instance, "foo-bar" would be converted to
@@ -12,7 +13,7 @@ define(function (require) {
      */
     return function (s) {
         return String(s).replace(/-+([^\-])?/g, function (match, ch) {
-            return ch ? ch.toUpperCase() : "";
+            return ch ? ch.toUpperCase() : '';
         });
     };
 });

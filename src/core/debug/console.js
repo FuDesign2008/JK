@@ -98,6 +98,7 @@ define(function (require) {
          * @param {Boolean} logSelf  是否log自身, 默认为true
          * @param {Integer} blankExtra  blank 的额外长度, 默认为0
          */
+        /*jshint maxcomplexity: 16*/
         consoleLog = function (obj, blank, logSelf, blankExtra) {
             blank = blank || '';
             logSelf = logSelf !== false;
@@ -145,6 +146,7 @@ define(function (require) {
                             temp2 = GET_TYPE(temp);
                             blankExtra = prop + ': ';
                             logLine(blank + blankExtra + temp);
+                            /*jshint maxdepth: 4*/
                             if ((temp2 === 'object' && temp.hasOwnProperty) ||
                                     (temp2 === 'array')) {
                                 fnSelf(temp, blank, false,

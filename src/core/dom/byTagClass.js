@@ -6,7 +6,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var TO_ARRAY = require('../arr/toArray'),
         TYPE = require('../obj/type'),
         FOR_EACH = require('../arr/forEach'),

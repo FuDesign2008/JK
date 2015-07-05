@@ -6,7 +6,7 @@
  */
 
 
-define(function (require, exports) {
+define(function () {
 
     /**
      * @param {Array} arr 必须是数值数组，忽略null,undefined;

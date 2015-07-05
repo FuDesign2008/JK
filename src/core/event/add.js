@@ -5,7 +5,7 @@
 
 
 
-define(function (require, exports) {
+define(function (require) {
     var TYPE = require('../obj/type'),
         IS_BINDABLE = require('./isBindable');
     /**
@@ -28,7 +28,7 @@ define(function (require, exports) {
          *      but 'addEventListener' does.
          */
         if (el.addEventListener) {
-            el.addEventListener(type, handler, false);
+            el.addEventListener(type, handler, useCapture || false);
         } else if (el.attachEvent) {
             el.attachEvent('on' + type, handler);
         }

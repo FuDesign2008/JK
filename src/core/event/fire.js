@@ -10,7 +10,7 @@
 
 
 
-define(function (require) {
+define(function () {
     /**
      * @param {HTMLElement} el
      * @param {String} type

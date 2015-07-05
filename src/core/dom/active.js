@@ -4,7 +4,7 @@
 
 
 
-define(function (require, exports) {
+define(function (require) {
     var GET_RAW = require('../event/getRaw');
     return function () {
         var doc = document,

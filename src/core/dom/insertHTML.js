@@ -18,6 +18,7 @@ define(function (require) {
      * @param {String}  where
      * @return {HTMLElement}
      */
+    /*jshint maxcomplexity: 13*/
     return function (el, html, where) {
         var range,
             frag;

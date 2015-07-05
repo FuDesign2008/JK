@@ -7,7 +7,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var DOC = require('./doc');
     /**
      * @param {HTMLElement}

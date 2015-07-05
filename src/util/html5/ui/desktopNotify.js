@@ -17,16 +17,16 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
+
     var TYPE = require('../../core/obj/type'),
         PARAM = require('../../core/obj/param'),
         FOR_OWN = require('../../core/obj/forOwn'),
-        DESTROY = require('../../core/obj/destroy'),
         console = require('../../core/debug/console'),
         SUPPORT = require('../bom/support'),
         PERMISSION_ALLOWED = 0,
-        PERMISSION_NOT_ALLOWED = 1,
-        PERMISSION_DENIED = 2,
+        //PERMISSION_NOT_ALLOWED = 1,
+        //PERMISSION_DENIED = 2,
         notifyCenter = window.webkitNotifications;
 
     return {

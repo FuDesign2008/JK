@@ -69,6 +69,7 @@ define(function (require) {
                     } else {
                         if (isArrStart) {
                             computed = [];
+                            /*jshint maxdepth: 4*/
                             for (i = 0; i < len; i++) {
                                 computed.push(ALG.compute(type, start[i],
                                         end[i], counter, total));

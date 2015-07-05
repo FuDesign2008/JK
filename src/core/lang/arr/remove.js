@@ -4,7 +4,7 @@
 
 
 
-define(function (require, exports) {
+define(function () {
     /**
      * @param {Array} arr 数组
      * @param {Integer} index 索引或值, 默认为索引

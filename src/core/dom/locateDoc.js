@@ -6,7 +6,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var IS_VISIBLE = require('./isVisible'),
         ELEMENT = require('./element'),
         DOC_SCROLL = require('./docScroll'),

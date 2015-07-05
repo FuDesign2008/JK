@@ -5,7 +5,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var NODE_TYPE = require('./nodeType'),
         INSERT = require('./insert');
     /**

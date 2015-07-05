@@ -49,6 +49,7 @@ define(function (require) {
                 handlers = events[type];
                 if (handlers && handlers.length) {
                     for (j = handlers.length - 1; j >= 0; j--) {
+                        /*jshint maxdepth: 4*/
                         if (handlers[j] === handler) {
                             handlers.splice(j, 1);
                         }

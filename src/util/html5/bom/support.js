@@ -6,9 +6,10 @@
  */
 
 
-define(function (require, exports) {
+define(function () {
+
     var testCanvas = function () {
-        var canvas = document.createElement("canvas"),
+        var canvas = document.createElement('canvas'),
             ret = false;
         if (canvas && canvas.getContext) {
             ret = true;

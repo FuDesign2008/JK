@@ -8,7 +8,7 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
     var GET_TYPE = require('../obj/getType');
     /**
      * @param {Function} fn

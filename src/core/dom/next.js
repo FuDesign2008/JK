@@ -1,7 +1,7 @@
 
 
 
-define(function (require, exports) {
+define(function (require) {
     var TYPE = require('../obj/type'),
         NODE_TYPE = require('./nodeType');
     /**

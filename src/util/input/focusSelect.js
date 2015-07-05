@@ -12,9 +12,7 @@
 define(function (require) {
     var BIND = require('../../core/event/bind'),
         UNBIND = require('../../core/event/unbind'),
-        IS_TAG = require('../../core/dom/isTag'),
         PARAM = require('../../core/obj/param'),
-        DESTROY = require('../../core/obj/destroy'),
         WEBKIT = require('../../core/bom/ua.WEBKIT'),
         IS_INPUT = require('../input.isInput'),
         UNIQUE = require('../../core/math/unique'),

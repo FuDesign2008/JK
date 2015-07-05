@@ -6,7 +6,8 @@
  */
 
 
-define(function (require, exports) {
+define(function (require) {
+
     var FOR_OWN = require('./forOwn'),
         IS_PLAIN_OBJ = require('./isPlainObj'),
         /**
